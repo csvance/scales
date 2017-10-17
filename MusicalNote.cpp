@@ -37,6 +37,14 @@ namespace MusicalScales {
         return noteString.str();
     }
 
+    std::string MusicalNote::key(){
+        return toString();
+    }
+
+    int MusicalNote::noteIndex(){
+        return static_cast<int>(rootNote) + octave*12;
+    };
+
     std::string MusicalNote::rootToString(rootNotes note) {
         switch (note) {
             case MusicalNote::rootNotes::C:

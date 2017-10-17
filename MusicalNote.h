@@ -9,7 +9,6 @@
 
 namespace MusicalScales {
 
-
     class MusicalNote {
     public:
         enum class rootNotes {
@@ -38,7 +37,9 @@ namespace MusicalScales {
 
         MusicalNote(rootNotes note, int octaveNum);
 
+        int noteIndex();
         std::string toString();
+        std::string key();
 
         static std::string rootToString(rootNotes note);
 
