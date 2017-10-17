@@ -4,13 +4,17 @@
 
 #include "Minor.h"
 
-MinorScale::MinorScale(MusicalNote::rootNotes root) : MusicalScale(root) {
-    steps.push_back(MusicalScale::noteSteps::Whole);
-    steps.push_back(MusicalScale::noteSteps::Half);
-    steps.push_back(MusicalScale::noteSteps::Whole);
-    steps.push_back(MusicalScale::noteSteps::Whole);
-    steps.push_back(MusicalScale::noteSteps::Half);
-    steps.push_back(MusicalScale::noteSteps::Whole);
-    steps.push_back(MusicalScale::noteSteps::Whole);
-    build();
+namespace MusicalScales {
+
+    MinorScale::MinorScale(MusicalNote::rootNotes root) : MusicalScale(root) {
+        steps.push_back(MusicalScale::noteSteps::Whole);
+        steps.push_back(MusicalScale::noteSteps::Half);
+        steps.push_back(MusicalScale::noteSteps::Whole);
+        steps.push_back(MusicalScale::noteSteps::Whole);
+        steps.push_back(MusicalScale::noteSteps::Half);
+        steps.push_back(MusicalScale::noteSteps::Whole);
+        steps.push_back(MusicalScale::noteSteps::Whole);
+        build();
+    }
+
 }

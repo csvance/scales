@@ -4,6 +4,7 @@
 #include "MusicalScale.h"
 #include "scales/Major.h"
 
+using namespace MusicalScales;
 using namespace std;
 
 int main() {

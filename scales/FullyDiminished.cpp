@@ -4,8 +4,12 @@
 
 #include "FullyDiminished.h"
 
-FullyDiminishedScale::FullyDiminishedScale(MusicalNote::rootNotes root) : MusicalScale(root) {
-    steps.push_back(MusicalScale::noteSteps::Whole);
-    steps.push_back(MusicalScale::noteSteps::Half);
-    build();
+namespace MusicalScales {
+
+    FullyDiminishedScale::FullyDiminishedScale(MusicalNote::rootNotes root) : MusicalScale(root) {
+        steps.push_back(MusicalScale::noteSteps::Whole);
+        steps.push_back(MusicalScale::noteSteps::Half);
+        build();
+    }
+
 }

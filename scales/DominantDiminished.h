@@ -7,10 +7,12 @@
 
 #include "../MusicalScale.h"
 
-class DominantDiminishedScale : MusicalScale {
-public:
-    DominantDiminishedScale(MusicalNote::rootNotes root);
-};
+namespace MusicalScales {
 
+    class DominantDiminishedScale : MusicalScale {
+    public:
+        DominantDiminishedScale(MusicalNote::rootNotes root);
+    };
 
+}
 #endif //GUITAR_SCALES_DOMINANTDIMINISHEDSCALE_H

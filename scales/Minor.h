@@ -5,15 +5,15 @@
 #ifndef GUITAR_SCALES_MINORSCALE_H
 #define GUITAR_SCALES_MINORSCALE_H
 
-
 #include "../MusicalScale.h"
 
-using namespace std;
+namespace MusicalScales {
 
-class MinorScale : public MusicalScale {
-public:
-    MinorScale(MusicalNote::rootNotes root);
-};
+    class MinorScale : public MusicalScale {
+    public:
+        MinorScale(MusicalNote::rootNotes root);
+    };
 
+}
 
 #endif //GUITAR_SCALES_MINORSCALE_H

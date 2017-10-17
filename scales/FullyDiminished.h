@@ -7,10 +7,14 @@
 
 #include "../MusicalScale.h"
 
-class FullyDiminishedScale : MusicalScale {
-public:
-    FullyDiminishedScale(MusicalNote::rootNotes root);
-};
+namespace MusicalScales {
 
+
+    class FullyDiminishedScale : MusicalScale {
+    public:
+        FullyDiminishedScale(MusicalNote::rootNotes root);
+    };
+
+}
 
 #endif //GUITAR_SCALES_FULLYDIMINISHEDSCALE_H

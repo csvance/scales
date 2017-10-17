@@ -4,8 +4,12 @@
 
 #include "DominantDiminished.h"
 
-DominantDiminishedScale::DominantDiminishedScale(MusicalNote::rootNotes root) : MusicalScale(root) {
-    steps.push_back(MusicalScale::noteSteps::Half);
-    steps.push_back(MusicalScale::noteSteps::Whole);
-    build();
+namespace MusicalScales {
+
+    DominantDiminishedScale::DominantDiminishedScale(MusicalNote::rootNotes root) : MusicalScale(root) {
+        steps.push_back(MusicalScale::noteSteps::Half);
+        steps.push_back(MusicalScale::noteSteps::Whole);
+        build();
+    }
+
 }

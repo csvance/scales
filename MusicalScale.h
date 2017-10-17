@@ -12,31 +12,44 @@
 #define OCTAVE_COUNT 6
 #define OCTAVE_SIZE 12
 
-using namespace std;
+namespace MusicalScales {
 
-class MusicalScale {
-public:
-    enum class noteSteps {Half=1,Whole=2,WholeHalf=3};
+    class MusicalScale {
+    public:
+        enum class noteSteps {
+            Half = 1, Whole = 2, WholeHalf = 3
+        };
 
-    void setRoot(MusicalNote::rootNotes note);
-    void setStep(vector<noteSteps> steps);
-    void build();
+        void setRoot(MusicalNote::rootNotes note);
 
-    MusicalScale(MusicalNote::rootNotes root);
-    MusicalNote getNote(int index);
-    vector<MusicalNote> getNotes(int startIndex, int count);
+        void setStep(std::vector<noteSteps> steps);
 
-    int size();
+        void build();
 
-protected:
-    MusicalNote::rootNotes rootNote;
-    vector<noteSteps> steps;
+        MusicalScale(MusicalNote::rootNotes root);
 
-private:
-    vector<MusicalNote> notes;
-};
+        MusicalNote getNote(int index);
+
+        std::vector<MusicalNote> getNotes(int startIndex, int count);
+
+        int size();
+
+    protected:
+        MusicalNote::rootNotes rootNote;
+        std::vector<noteSteps> steps;
+
+    private:
+        std::vector<MusicalNote> notes;
+    };
+
+}
 
 //Include scale headers for use
 #include "scales/Major.h"
+#include "scales/Minor.h"
+#include "scales/DominantDiminished.h"
+#include "scales/FullyDiminished.h"
+
+
 
 #endif //GUITAR_SCALES_MUSICALSCALE_H

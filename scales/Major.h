@@ -7,13 +7,14 @@
 
 #include "../MusicalScale.h"
 
-using namespace std;
+namespace MusicalScales {
 
-class MajorScale : public MusicalScale {
-public:
-    MajorScale(MusicalNote::rootNotes root);
-};
+    class MajorScale : public MusicalScale {
+    public:
+        MajorScale(MusicalNote::rootNotes root);
+    };
 
+}
 
 #endif //GUITAR_SCALES_MAJORSCALE_H
 
