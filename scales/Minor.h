@@ -6,7 +6,7 @@
 #define GUITAR_SCALES_MINORSCALE_H
 
 
-#include "MusicalScale.h"
+#include "../MusicalScale.h"
 
 using namespace std;
 

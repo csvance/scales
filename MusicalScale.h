@@ -9,7 +9,8 @@
 
 #include "MusicalNote.h"
 
-#define BUILD_OCTAVES 6
+#define OCTAVE_COUNT 6
+#define OCTAVE_SIZE 12
 
 using namespace std;
 
@@ -36,6 +37,6 @@ private:
 };
 
 //Include scale headers for use
-#include "MajorScale.h"
+#include "scales/Major.h"
 
 #endif //GUITAR_SCALES_MUSICALSCALE_H

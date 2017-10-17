@@ -5,7 +5,7 @@
 #ifndef GUITAR_SCALES_MAJORSCALE_H
 #define GUITAR_SCALES_MAJORSCALE_H
 
-#include "MusicalScale.h"
+#include "../MusicalScale.h"
 
 using namespace std;
 
@@ -16,3 +16,4 @@ public:
 
 
 #endif //GUITAR_SCALES_MAJORSCALE_H
+

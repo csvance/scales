@@ -1,7 +1,8 @@
 #include <iostream>
 
+#include "MusicalNote.h"
 #include "MusicalScale.h"
-#include "MajorScale.h"
+#include "scales/Major.h"
 
 using namespace std;
 

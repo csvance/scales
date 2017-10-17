@@ -53,7 +53,7 @@ void MusicalScale::build() {
 
         }
 
-    } while(noteIndex < BUILD_OCTAVES*12);
+    } while(noteIndex < OCTAVE_COUNT*OCTAVE_SIZE);
 
 }
 
