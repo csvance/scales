@@ -12,18 +12,9 @@
 
 namespace MusicalScales {
 
-    class InstrumentNote : MusicalNote {
+    class InstrumentNote : public MusicalNote {
     public:
         using MusicalNote::MusicalNote;
-        using MusicalNote::toString;
-        using MusicalNote::key;
-        using MusicalNote::rootNote;
-        using MusicalNote::octave;
-        using MusicalNote::noteIndex;
-
-        InstrumentNote(MusicalNote note);
-        InstrumentNote(ToggleNote note);
-
         void mappedNoteSetActive(bool active);
         void mappedNoteAdd(ToggleNote* note);
 

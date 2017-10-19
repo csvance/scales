@@ -29,6 +29,11 @@ namespace MusicalScales {
         octave = octaveNum;
     }
 
+    MusicalNote::MusicalNote(const MusicalNote& note) {
+        rootNote = note.rootNote;
+        octave = note.octave;
+    }
+
     std::string MusicalNote::toString() {
         std::stringstream noteString;
 

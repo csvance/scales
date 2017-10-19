@@ -51,8 +51,8 @@ namespace MusicalScales {
             //Add a vector for the string
             noteGroups.push_back(std::vector<ToggleNote>());
 
-            //For each fret on the string, add a note
-            for(int fret=0;fret<numFrets;fret++){
+            //For the root note and each fret on the string, add a note
+            for(int fret=0;fret<=numFrets;fret++){
 
                 int calculatedNote = (*stringIt).noteIndex() + fret;
 

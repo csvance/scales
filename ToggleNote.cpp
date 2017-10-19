@@ -6,9 +6,7 @@
 
 namespace MusicalScales {
 
-    ToggleNote::ToggleNote(MusicalNote note) {
-        rootNote = note.rootNote;
-        octave = note.octave;
+    ToggleNote::ToggleNote(const MusicalNote& note) : MusicalNote(note) {
         active = false;
     }
 }

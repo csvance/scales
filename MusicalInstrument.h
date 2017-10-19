@@ -21,10 +21,12 @@ namespace MusicalScales{
         MusicalInstrument();
 
         void setScale(MusicalScale scale);
+        void resetScale();
+
+        std::vector<std::vector<ToggleNote>> noteGroups;
 
     protected:
         void buildIndex();
-        std::vector<std::vector<ToggleNote>> noteGroups;
 
     private:
         std::map<std::string,InstrumentNote> noteIndex;

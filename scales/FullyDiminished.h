@@ -10,7 +10,7 @@
 namespace MusicalScales {
 
 
-    class FullyDiminishedScale : MusicalScale {
+    class FullyDiminishedScale : public MusicalScale {
     public:
         FullyDiminishedScale(MusicalNote::rootNotes root);
     };

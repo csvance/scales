@@ -10,20 +10,11 @@
 
 namespace MusicalScales {
 
-    class ToggleNote : MusicalNote {
+    class ToggleNote : public MusicalNote {
     public:
-        ToggleNote(MusicalNote note);
-
         using MusicalNote::MusicalNote;
-        using MusicalNote::toString;
-        using MusicalNote::key;
-        using MusicalNote::rootNote;
-        using MusicalNote::octave;
-        using MusicalNote::noteIndex;
-
+        ToggleNote(const MusicalNote& note);
         bool active;
-
-
     };
 
 }

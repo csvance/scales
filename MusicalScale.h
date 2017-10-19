@@ -30,16 +30,15 @@ namespace MusicalScales {
 
         MusicalNote getNote(int index);
 
-        std::vector<MusicalNote> getNotes(int startIndex, int count);
-
         int size();
 
+        std::vector<MusicalNote> notes;
     protected:
         MusicalNote::rootNotes rootNote;
         std::vector<noteSteps> steps;
 
     private:
-        std::vector<MusicalNote> notes;
+
     };
 
 }

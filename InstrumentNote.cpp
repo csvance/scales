@@ -7,18 +7,8 @@
 
 namespace MusicalScales {
 
-    InstrumentNote::InstrumentNote(MusicalNote note) {
-        rootNote = note.rootNote;
-        octave = note.octave;
-    }
-
-    InstrumentNote::InstrumentNote(ToggleNote note) {
-        rootNote = note.rootNote;
-        octave = note.octave;
-    }
-
     void InstrumentNote::mappedNoteSetActive(bool active) {
-        for(std::vector<ToggleNote*>::iterator mappedNotesIt = mappedNotes.begin();
+        for(auto mappedNotesIt = mappedNotes.begin();
             mappedNotesIt != mappedNotes.end();
             mappedNotesIt++) {
 

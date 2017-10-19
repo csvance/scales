@@ -31,11 +31,13 @@ namespace MusicalScales {
 
         MusicalNote();
 
-        MusicalNote(int noteIndex);
+        explicit MusicalNote(int noteIndex);
 
-        MusicalNote(rootNotes note);
+        explicit MusicalNote(rootNotes note);
 
         MusicalNote(rootNotes note, int octaveNum);
+
+        MusicalNote(const MusicalNote& note);
 
         int noteIndex();
         std::string toString();

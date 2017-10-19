@@ -15,7 +15,7 @@
 
 namespace MusicalScales {
 
-    class Guitar : MusicalInstrument {
+    class Guitar : public MusicalInstrument {
     public:
 
         Guitar();
@@ -24,6 +24,8 @@ namespace MusicalScales {
 
         int numFrets;
         std::vector<InstrumentString> strings;
+
+        using MusicalInstrument::setScale;
 
     private:
         void buildNotes();

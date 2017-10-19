@@ -9,7 +9,7 @@
 
 namespace MusicalScales {
 
-    class DominantDiminishedScale : MusicalScale {
+    class DominantDiminishedScale : public MusicalScale {
     public:
         DominantDiminishedScale(MusicalNote::rootNotes root);
     };
