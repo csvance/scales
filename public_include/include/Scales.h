@@ -6,8 +6,8 @@
 #define GUITAR_SCALES_SCALES_H
 
 //Include scale headers for use
-#include "Major.h"
-#include "Minor.h"
+#include "MajorScale.h"
+#include "MinorScale.h"
 #include "DominantDiminished.h"
 #include "FullyDiminished.h"
 

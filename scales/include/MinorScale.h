@@ -5,7 +5,7 @@
 #ifndef GUITAR_SCALES_MINORSCALE_H
 #define GUITAR_SCALES_MINORSCALE_H
 
-#include "../../include/MusicalScale.h"
+#include "MusicalScale.h"
 
 namespace MusicalScales {
 
