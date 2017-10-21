@@ -12,8 +12,7 @@ namespace MusicalScales {
 
     class MusicalInstrumentRendererText : public MusicalInstrumentRenderer {
     public:
-        using MusicalInstrumentRenderer::MusicalInstrumentRenderer;
-
+        MusicalInstrumentRendererText(MusicalInstrument inst);
         void render(bool activeOnly);
     };
 

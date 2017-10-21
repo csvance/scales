@@ -10,6 +10,8 @@
 
 namespace MusicalScales {
 
+    MusicalInstrumentRendererText::MusicalInstrumentRendererText(MusicalInstrument inst) : MusicalInstrumentRenderer(inst){}
+
     void MusicalInstrumentRendererText::render(bool activeOnly) {
         std::stringstream outputStream;
 

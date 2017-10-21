@@ -5,13 +5,14 @@
 #include "scales/Major.h"
 #include "instruments/Guitar.h"
 #include "MusicalInstrumentRendererText.h"
+#include "renderers/GuitarRendererText.h"
 
 using namespace MusicalScales;
 using namespace std;
 
 int main() {
 
-    MajorScale majorScale(MusicalNote::rootNotes::CSharp);
+    MajorScale majorScale(MusicalNote::rootNotes::C);
 
     for(int i=0; i<majorScale.size(); i++)
         cout << majorScale.getNote(i).toString() << endl;
@@ -19,8 +20,8 @@ int main() {
     Guitar guitar = Guitar();
     guitar.setScale(majorScale);
 
-    MusicalInstrumentRendererText renderer = MusicalInstrumentRendererText((MusicalInstrument)guitar);
-    renderer.render(false);
+    GuitarRendererText renderer = GuitarRendererText(guitar);
+    renderer.render(true);
 
     return 0;
 }
