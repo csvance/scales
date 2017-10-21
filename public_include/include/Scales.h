@@ -10,5 +10,6 @@
 #include "MinorScale.h"
 #include "DominantDiminished.h"
 #include "FullyDiminished.h"
+#include "ChromaticScale.h"
 
 #endif //GUITAR_SCALES_SCALES_H

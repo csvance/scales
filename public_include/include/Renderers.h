@@ -6,5 +6,6 @@
 #define GUITAR_SCALES_RENDERERS_H
 
 #include "GuitarRendererText.h"
+#include "PianoRendererText.h"
 
 #endif //GUITAR_SCALES_RENDERERS_H

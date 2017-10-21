@@ -5,7 +5,6 @@
 #include <vector>
 
 #include "GuitarFamily.h"
-#include "include/InstrumentString.h"
 
 namespace MusicalScales {
 
