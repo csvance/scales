@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a6a2036-d00e-4d4c-8bf6-393cca232848" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/renderers/PianoRendererText.cpp" afterPath="$PROJECT_DIR$/renderers/PianoRendererText.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -96,8 +95,8 @@
       <file leaf-file-name="PianoRendererText.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/renderers/PianoRendererText.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="40" column="58" lean-forward="false" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+            <state relative-caret-position="574">
+              <caret line="40" column="64" lean-forward="false" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
               <folding>
                 <element signature="e#48#65#0" expanded="true" />
               </folding>
@@ -354,12 +353,12 @@
       <workItem from="1508245785945" duration="10755000" />
       <workItem from="1508419805614" duration="409000" />
       <workItem from="1508421682409" duration="16837000" />
-      <workItem from="1508605934375" duration="3793000" />
+      <workItem from="1508605934375" duration="3913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44494000" />
+    <option name="totallyTimeSpent" value="44614000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -825,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/renderers/PianoRendererText.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="40" column="58" lean-forward="false" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
+        <state relative-caret-position="574">
+          <caret line="40" column="64" lean-forward="false" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="64" />
           <folding>
             <element signature="e#48#65#0" expanded="true" />
           </folding>
