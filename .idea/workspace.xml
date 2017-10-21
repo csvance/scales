@@ -12,11 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7a6a2036-d00e-4d4c-8bf6-393cca232848" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/instruments/GuitarFamily.cpp" afterPath="$PROJECT_DIR$/instruments/GuitarFamily.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_include/include/Renderers.h" afterPath="$PROJECT_DIR$/public_include/include/Renderers.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public_include/include/Scales.h" afterPath="$PROJECT_DIR$/public_include/include/Scales.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/renderers/PianoRendererText.cpp" afterPath="$PROJECT_DIR$/renderers/PianoRendererText.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -63,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -97,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PianoRendererText.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PianoRendererText.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/renderers/PianoRendererText.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="39" column="65" lean-forward="false" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+            <state relative-caret-position="320">
+              <caret line="40" column="58" lean-forward="false" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
               <folding>
                 <element signature="e#48#65#0" expanded="true" />
               </folding>
@@ -206,8 +202,8 @@
         <option value="$PROJECT_DIR$/public_include/include/Scales.h" />
         <option value="$PROJECT_DIR$/instruments/GuitarFamily.cpp" />
         <option value="$PROJECT_DIR$/public_include/include/Renderers.h" />
-        <option value="$PROJECT_DIR$/renderers/PianoRendererText.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/renderers/PianoRendererText.cpp" />
       </list>
     </option>
   </component>
@@ -358,12 +354,12 @@
       <workItem from="1508245785945" duration="10755000" />
       <workItem from="1508419805614" duration="409000" />
       <workItem from="1508421682409" duration="16837000" />
-      <workItem from="1508605934375" duration="3554000" />
+      <workItem from="1508605934375" duration="3793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44255000" />
+    <option name="totallyTimeSpent" value="44494000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,7 +407,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>23</line>
+          <line>22</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
@@ -817,22 +813,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/renderers/PianoRendererText.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="65" lean-forward="false" selection-start-line="39" selection-start-column="65" selection-end-line="39" selection-end-column="65" />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
-            <element signature="e#48#65#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/renderers/PianoRendererText.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="320">
+          <caret line="40" column="58" lean-forward="false" selection-start-line="40" selection-start-column="58" selection-end-line="40" selection-end-column="58" />
           <folding>
-            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#48#65#0" expanded="true" />
           </folding>
         </state>
       </provider>

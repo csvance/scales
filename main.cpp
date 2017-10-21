@@ -3,7 +3,6 @@
 #include "public_include/MusicalScales.h"
 
 using namespace MusicalScales;
-using namespace std;
 
 int main() {
 
