@@ -34,10 +34,10 @@ namespace MusicalScales{
 
             auto noteIt = (*noteGroupIt).begin();
 
-            if(activeOnly && !(*noteIt).active)
-                outputStream << std::setw(4) <<  "|";
-            else
+            if(!activeOnly || (*noteIt).active)
                 outputStream << std::setw(3) << (*noteIt).toString() << "|";
+            else
+                outputStream << std::setw(4) <<  "|";
 
             noteIt++;
 
@@ -45,10 +45,10 @@ namespace MusicalScales{
                  noteIt != (*noteGroupIt).end();
                  noteIt++) {
 
-                if(activeOnly && !(*noteIt).active)
-                    outputStream << std::setw(4) << "|";
-                else
+                if(!activeOnly || (*noteIt).active)
                     outputStream << std::setw(3) << (*noteIt).toString() << "|";
+                else
+                    outputStream << std::setw(4) <<  "|";
 
             }
 
