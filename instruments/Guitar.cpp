@@ -35,7 +35,7 @@ namespace MusicalScales {
         buildNotes();
     }
 
-    Guitar::Guitar(int frets, std::vector<InstrumentString> instrumentStrings) : MusicalInstrument(){
+    Guitar::Guitar(int frets, std::vector<InstrumentString> &instrumentStrings) : MusicalInstrument(){
         numFrets = frets;
         strings = instrumentStrings;
 
@@ -46,17 +46,17 @@ namespace MusicalScales {
     void Guitar::buildNotes() {
 
         //For each string : one note group
-        for (std::vector<InstrumentString>::iterator stringIt = strings.begin(); stringIt != strings.end(); stringIt++){
+        for (auto stringIt = strings.begin(); stringIt != strings.end(); stringIt++){
 
             //Add a vector for the string
-            noteGroups.push_back(std::vector<ToggleNote>());
+            noteGroups.emplace_back(std::vector<ToggleNote>());
 
             //For the root note and each fret on the string, add a note
             for(int fret=0;fret<=numFrets;fret++){
 
                 int calculatedNote = (*stringIt).noteIndex() + fret;
 
-                noteGroups.back().push_back(ToggleNote(calculatedNote));
+                noteGroups.back().emplace_back(ToggleNote(calculatedNote));
             }
 
         }

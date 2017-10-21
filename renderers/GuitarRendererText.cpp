@@ -46,9 +46,9 @@ namespace MusicalScales{
                  noteIt++) {
 
                 if(activeOnly && !(*noteIt).active)
-                    outputStream << std::setw(4) << "";
+                    outputStream << std::setw(4) << "|";
                 else
-                    outputStream << std::setw(4) << (*noteIt).toString();
+                    outputStream << std::setw(3) << (*noteIt).toString() << "|";
 
             }
 

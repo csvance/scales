@@ -20,7 +20,7 @@ namespace MusicalScales {
 
         Guitar();
         Guitar(int frets);
-        Guitar(int frets, std::vector<InstrumentString> instrumentStrings);
+        Guitar(int frets, std::vector<InstrumentString> &instrumentStrings);
 
         int numFrets;
         std::vector<InstrumentString> strings;
