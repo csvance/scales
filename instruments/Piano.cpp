@@ -2,7 +2,7 @@
 // Created by Carroll Vance on 10/21/17.
 //
 
-#include "Piano.h"
+#include "include/Piano.h"
 
 namespace MusicalScales {
     Piano::Piano() : MusicalInstrument(){

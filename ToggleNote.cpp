@@ -2,7 +2,7 @@
 // Created by Carroll Vance on 10/17/17.
 //
 
-#include "ToggleNote.h"
+#include "include/ToggleNote.h"
 
 namespace MusicalScales {
 

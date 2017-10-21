@@ -5,9 +5,8 @@
 #ifndef GUITAR_SCALES_GUITARRENDERERTEXT_H
 #define GUITAR_SCALES_GUITARRENDERERTEXT_H
 
-#include "../MusicalScale.h"
-#include "../MusicalInstrumentRendererText.h"
-#include "../instruments/Guitar.h"
+#include "MusicalInstrumentRendererText.h"
+#include "Guitar.h"
 
 namespace MusicalScales {
 

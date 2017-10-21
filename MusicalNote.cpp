@@ -5,7 +5,7 @@
 #include <string>
 #include <sstream>
 
-#include "MusicalNote.h"
+#include "include/MusicalNote.h"
 
 namespace MusicalScales {
 

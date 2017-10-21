@@ -2,7 +2,7 @@
 // Created by Carroll Vance on 10/17/17.
 //
 
-#include "DominantDiminished.h"
+#include "include/DominantDiminished.h"
 
 namespace MusicalScales {
 

@@ -6,7 +6,7 @@
 #include <sstream>
 #include <iostream>
 
-#include "MusicalInstrumentRendererText.h"
+#include "include/MusicalInstrumentRendererText.h"
 
 namespace MusicalScales {
 

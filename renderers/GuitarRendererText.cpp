@@ -7,7 +7,7 @@
 #include <iostream>
 #include <iomanip>
 
-#include "GuitarRendererText.h"
+#include "include/GuitarRendererText.h"
 
 namespace MusicalScales{
 

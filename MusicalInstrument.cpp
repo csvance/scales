@@ -7,8 +7,8 @@
 #include <string>
 #include <sstream>
 
-#include "MusicalInstrument.h"
-#include "ToggleNote.h"
+#include "include/MusicalInstrument.h"
+#include "include/ToggleNote.h"
 
 namespace MusicalScales {
 

@@ -2,7 +2,7 @@
 // Created by Carroll Vance on 10/12/17.
 //
 
-#include "Minor.h"
+#include "include/Minor.h"
 
 namespace MusicalScales {
 

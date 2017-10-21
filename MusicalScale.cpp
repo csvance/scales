@@ -2,7 +2,7 @@
 // Created by Carroll Vance on 10/12/17.
 //
 
-#include "MusicalScale.h"
+#include "include/MusicalScale.h"
 
 namespace MusicalScales {
 

@@ -5,8 +5,8 @@
 #include <iostream>
 #include <sstream>
 
-#include "MusicalInstrumentRenderer.h"
-#include "ToggleNote.h"
+#include "include/MusicalInstrumentRenderer.h"
+#include "include/ToggleNote.h"
 
 namespace MusicalScales{
 

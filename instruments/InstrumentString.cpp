@@ -2,7 +2,7 @@
 // Created by Carroll Vance on 10/17/17.
 //
 
-#include "InstrumentString.h"
+#include "include/InstrumentString.h"
 
 namespace MusicalScales{
 

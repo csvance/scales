@@ -10,9 +10,8 @@
 #include <map>
 
 #include "MusicalScale.h"
-#include "MusicalNote.h"
-#include "InstrumentNote.h"
 #include "ToggleNote.h"
+#include "InstrumentNote.h"
 
 namespace MusicalScales{
 

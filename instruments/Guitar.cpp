@@ -4,8 +4,8 @@
 
 #include <vector>
 
-#include "Guitar.h"
-#include "InstrumentString.h"
+#include "include/Guitar.h"
+#include "include/InstrumentString.h"
 
 namespace MusicalScales {
 

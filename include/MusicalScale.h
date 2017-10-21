@@ -8,6 +8,7 @@
 #include <vector>
 
 #include "MusicalNote.h"
+#include "MusicalScale.h"
 
 #define OCTAVE_COUNT 6
 #define OCTAVE_SIZE 12
@@ -43,11 +44,7 @@ namespace MusicalScales {
 
 }
 
-//Include scale headers for use
-#include "scales/Major.h"
-#include "scales/Minor.h"
-#include "scales/DominantDiminished.h"
-#include "scales/FullyDiminished.h"
+
 
 
 

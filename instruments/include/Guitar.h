@@ -7,10 +7,7 @@
 
 #include <vector>
 
-#include "../MusicalInstrument.h"
-#include "../MusicalScale.h"
-#include "../MusicalNote.h"
-
+#include "../../include/MusicalInstrument.h"
 #include "InstrumentString.h"
 
 namespace MusicalScales {

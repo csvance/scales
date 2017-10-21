@@ -7,7 +7,7 @@
 
 #include <vector>
 
-#include "MusicalNote.h"
+#include "MusicalScale.h"
 #include "ToggleNote.h"
 
 namespace MusicalScales {

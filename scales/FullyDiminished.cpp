@@ -2,7 +2,7 @@
 // Created by Carroll Vance on 10/17/17.
 //
 
-#include "FullyDiminished.h"
+#include "include/FullyDiminished.h"
 
 namespace MusicalScales {
 

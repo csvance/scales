@@ -1,12 +1,6 @@
 #include <iostream>
 
-#include "MusicalNote.h"
-#include "MusicalScale.h"
-#include "scales/Major.h"
-#include "instruments/Guitar.h"
-#include "instruments/Piano.h"
-#include "MusicalInstrumentRendererText.h"
-#include "renderers/GuitarRendererText.h"
+#include "public_include/MusicalScales.h"
 
 using namespace MusicalScales;
 using namespace std;

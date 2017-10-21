@@ -5,7 +5,8 @@
 #ifndef GUITAR_SCALES_MAJORSCALE_H
 #define GUITAR_SCALES_MAJORSCALE_H
 
-#include "../MusicalScale.h"
+#include "../../include/MusicalScale.h"
+#include "../../include/MusicalNote.h"
 
 namespace MusicalScales {
 
