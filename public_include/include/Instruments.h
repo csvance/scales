@@ -5,7 +5,8 @@
 #ifndef GUITAR_SCALES_INSTRUMENTS_H
 #define GUITAR_SCALES_INSTRUMENTS_H
 
-#include "Guitar.h"
+#include "GuitarFamily.h"
+#include "BassGuitar.h"
 #include "Piano.h"
 
 #endif //GUITAR_SCALES_INSTRUMENTS_H

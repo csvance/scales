@@ -7,7 +7,7 @@
 
 #include "MusicalInstrumentRendererText.h"
 #include "Piano.h"
-#include "Guitar.h"
+#include "GuitarFamily.h"
 
 namespace MusicalScales {
 
@@ -17,7 +17,7 @@ namespace MusicalScales {
         void render(bool activeOnly);
 
     protected:
-        Guitar guitar;
+        Piano piano;
 
     };
 

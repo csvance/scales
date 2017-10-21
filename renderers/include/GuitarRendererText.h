@@ -6,17 +6,17 @@
 #define GUITAR_SCALES_GUITARRENDERERTEXT_H
 
 #include "MusicalInstrumentRendererText.h"
-#include "Guitar.h"
+#include "GuitarFamily.h"
 
 namespace MusicalScales {
 
     class GuitarRendererText : public MusicalInstrumentRendererText  {
     public:
-        GuitarRendererText(Guitar inst);
+        GuitarRendererText(GuitarFamily inst);
         void render(bool activeOnly);
 
     protected:
-        Guitar guitar;
+        GuitarFamily guitar;
 
     };
 

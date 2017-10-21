@@ -7,11 +7,11 @@
 #include <iostream>
 #include <iomanip>
 
-#include "include/GuitarRendererText.h"
+#include "GuitarRendererText.h"
 
 namespace MusicalScales{
 
-    GuitarRendererText::GuitarRendererText(Guitar inst) : MusicalInstrumentRendererText((MusicalInstrument)inst) {
+    GuitarRendererText::GuitarRendererText(GuitarFamily inst) : MusicalInstrumentRendererText((MusicalInstrument)inst) {
         guitar = inst;
     }
 

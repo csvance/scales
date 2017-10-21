@@ -2,4 +2,20 @@
 // Created by Carroll Vance on 10/21/17.
 //
 
-#include "include/PianoRendererText.h"
+#include <vector>
+#include <sstream>
+#include <iostream>
+#include <iomanip>
+
+#include "PianoRendererText.h"
+
+namespace MusicalScales{
+    PianoRendererText::PianoRendererText(Piano inst) : MusicalInstrumentRendererText((MusicalInstrument)inst) {
+        piano = inst;
+    }
+
+    void PianoRendererText::render(bool activeOnly){
+
+    }
+
+}

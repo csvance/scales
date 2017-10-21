@@ -9,18 +9,18 @@ int main() {
 
     MajorScale majorScale(MusicalNote::rootNotes::C);
 
-    Guitar guitar = Guitar();
+    BassGuitar guitar = BassGuitar();
     guitar.setScale(majorScale);
 
     GuitarRendererText renderer = GuitarRendererText(guitar);
-    //renderer.render(true);
+    renderer.render(true);
 
     Piano piano = Piano(5);
     piano.setScale(majorScale);
 
     MusicalInstrumentRendererText pianoRender = MusicalInstrumentRendererText(piano);
 
-    pianoRender.render(true);
+    //pianoRender.render(true);
 
     return 0;
 }
