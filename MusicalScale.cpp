@@ -25,7 +25,7 @@ namespace MusicalScales {
 
         std::vector<MusicalNote>::iterator noteIt;
 
-        //Build scale backwards starting in the last octave
+        //Build scale backwards starting at root note
         int noteIndex = static_cast<int>(rootNote) + (rootOctave*12);
 
         auto stepBack = stepsDescending.rbegin();
@@ -49,7 +49,7 @@ namespace MusicalScales {
         noteIt = notes.end();
         notes.insert(noteIt, MusicalNote(noteIndex));
 
-        //Build scale forwards until the nth octave
+        //Build scale forwards from first step until the nth octave
         do {
 
             //Iterate through stepsAscending

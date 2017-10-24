@@ -11,11 +11,6 @@ namespace MusicalScales {
         build();
     }
 
-    FullyDiminishedScale::FullyDiminishedScale(MusicalNote::rootNotes root, int octave) : MusicalScale(root, octave) {
-        addSteps();
-        build();
-    }
-
     void FullyDiminishedScale::addSteps() {
         stepsAscending.push_back(MusicalScale::noteSteps::Whole);
         stepsAscending.push_back(MusicalScale::noteSteps::Half);

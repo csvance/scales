@@ -16,7 +16,7 @@ int main() {
 
     std::cout << std::endl;
 
-    Piano piano = Piano(2);
+    Piano piano = Piano(3);
     piano.setScale(majorScale);
 
     PianoRendererText pianoRender = PianoRendererText(piano);
