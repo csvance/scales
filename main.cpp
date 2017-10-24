@@ -16,10 +16,11 @@ int main() {
 
     std::cout << std::endl;
 
-    Piano piano = Piano(3);
+    Piano piano = Piano(6);
     piano.setScale(majorScale);
 
     PianoRendererText pianoRender = PianoRendererText(piano);
+    pianoRender.setOctaveStart(2);
     pianoRender.render(true);
 
     std::cout << std::endl;

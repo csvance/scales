@@ -23,7 +23,18 @@ namespace MusicalScales {
         auto noteGroupIt = instrument.noteGroups.begin();
         auto noteIt = (*noteGroupIt).begin();
 
-        for (int octave = 0; octave < piano.numOctaves; octave++) {
+        int beginRenderOctave;
+
+        if(renderRange) {
+            noteIt += octaveStart * 12;
+            beginRenderOctave = octaveStart;
+        }else{
+            beginRenderOctave = 0;
+        }
+
+
+
+        for (int octave = beginRenderOctave; octave < piano.numOctaves; octave++) {
 
             std::string notes[12];
             for (int noteIndex = 0; noteIndex < 12; noteIndex++) {
