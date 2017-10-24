@@ -7,8 +7,14 @@
 namespace MusicalScales {
 
     ChromaticScale::ChromaticScale(MusicalNote::rootNotes root) : MusicalScale(root) {
-        steps.push_back(MusicalScale::noteSteps::Half);
+        addSteps();
         build();
+    }
+
+    void ChromaticScale::addSteps() {
+        stepsAscending.push_back(MusicalScale::noteSteps::Half);
+
+        stepsDescending = stepsAscending;
     }
 
 }

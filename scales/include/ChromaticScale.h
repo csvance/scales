@@ -12,6 +12,8 @@ namespace MusicalScales {
     class ChromaticScale : public MusicalScale {
     public:
         ChromaticScale(MusicalNote::rootNotes root);
+    protected:
+        void addSteps();
     };
 
 }

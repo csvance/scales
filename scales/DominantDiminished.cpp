@@ -7,9 +7,20 @@
 namespace MusicalScales {
 
     DominantDiminishedScale::DominantDiminishedScale(MusicalNote::rootNotes root) : MusicalScale(root) {
-        steps.push_back(MusicalScale::noteSteps::Half);
-        steps.push_back(MusicalScale::noteSteps::Whole);
+        addSteps();
         build();
+    }
+
+    DominantDiminishedScale::DominantDiminishedScale(MusicalNote::rootNotes root, int octave) : MusicalScale(root, octave) {
+        addSteps();
+        build();
+    }
+
+    void DominantDiminishedScale::addSteps() {
+        stepsAscending.push_back(MusicalScale::noteSteps::Half);
+        stepsAscending.push_back(MusicalScale::noteSteps::Whole);
+
+        stepsDescending = stepsAscending;
     }
 
 }

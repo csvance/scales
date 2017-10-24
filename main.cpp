@@ -6,7 +6,7 @@ using namespace MusicalScales;
 
 int main() {
 
-    ChromaticScale majorScale(MusicalNote::rootNotes::C);
+    MelodicMinorScale majorScale(MusicalNote::rootNotes::E,2);
 
     BassGuitar guitar = BassGuitar();
     guitar.setScale(majorScale);
@@ -14,11 +14,16 @@ int main() {
     GuitarRendererText renderer = GuitarRendererText(guitar);
     renderer.render(true);
 
-    Piano piano = Piano();
+    std::cout << std::endl;
+
+    Piano piano = Piano(2);
     piano.setScale(majorScale);
 
     PianoRendererText pianoRender = PianoRendererText(piano);
     pianoRender.render(true);
+
+    std::cout << std::endl;
+
 
     return 0;
 }

@@ -9,20 +9,29 @@ namespace MusicalScales {
 
     MusicalScale::MusicalScale(MusicalNote::rootNotes root) {
         rootNote = root;
-
+        rootOctave = 0;
+        noRepeat = false;
     }
+
+    MusicalScale::MusicalScale(MusicalNote::rootNotes root,int octave) {
+        rootNote = root;
+        rootOctave = octave;
+        noRepeat = false;
+    }
+
+    void MusicalScale::addSteps() {}
 
     void MusicalScale::build() {
 
         std::vector<MusicalNote>::iterator noteIt;
 
         //Build scale backwards starting in the last octave
-        int noteIndex = static_cast<int>(rootNote);
+        int noteIndex = static_cast<int>(rootNote) + (rootOctave*12);
 
-        auto stepBack = steps.rbegin();
+        auto stepBack = stepsDescending.rbegin();
 
-        //Iterate through steps
-        for (; stepBack != steps.rend(); stepBack++) {
+        //Iterate through stepsAscending
+        for (; stepBack != stepsDescending.rend(); stepBack++) {
 
             noteIndex -= static_cast<int>(*stepBack);
 
@@ -43,10 +52,10 @@ namespace MusicalScales {
         //Build scale forwards until the nth octave
         do {
 
-            //Iterate through steps
-            auto stepForward = steps.begin();
+            //Iterate through stepsAscending
+            auto stepForward = stepsAscending.begin();
 
-            for (; stepForward != steps.end(); stepForward++) {
+            for (; stepForward != stepsAscending.end(); stepForward++) {
                 noteIndex += static_cast<int>(*stepForward);
 
                 noteIt = notes.end();

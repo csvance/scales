@@ -10,9 +10,11 @@
 
 namespace MusicalScales {
 
-    class MajorScale : public MusicalScale {
+    class NaturalMajorScale : public MusicalScale {
     public:
-        MajorScale(MusicalNote::rootNotes root);
+        NaturalMajorScale(MusicalNote::rootNotes root);
+    protected:
+        void addSteps();
     };
 
 }

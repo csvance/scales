@@ -13,6 +13,10 @@ namespace MusicalScales {
     class FullyDiminishedScale : public MusicalScale {
     public:
         FullyDiminishedScale(MusicalNote::rootNotes root);
+        FullyDiminishedScale(MusicalNote::rootNotes root, int octave);
+
+    protected:
+        void addSteps();
     };
 
 }

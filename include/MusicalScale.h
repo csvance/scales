@@ -28,15 +28,25 @@ namespace MusicalScales {
         void build();
 
         MusicalScale(MusicalNote::rootNotes root);
+        MusicalScale(MusicalNote::rootNotes root, int octave);
 
         MusicalNote getNote(int index);
 
         int size();
 
         std::vector<MusicalNote> notes;
+
+        bool noRepeat;
+
     protected:
         MusicalNote::rootNotes rootNote;
-        std::vector<noteSteps> steps;
+        int rootOctave;
+
+        virtual void addSteps();
+
+        std::vector<noteSteps> stepsAscending;
+        std::vector<noteSteps> stepsDescending;
+
 
     private:
 
