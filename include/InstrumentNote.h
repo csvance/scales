@@ -15,11 +15,13 @@ namespace MusicalScales {
     class InstrumentNote : public MusicalNote {
     public:
         using MusicalNote::MusicalNote;
+
         void mappedNoteSetActive(bool active);
-        void mappedNoteAdd(ToggleNote* note);
+
+        void mappedNoteAdd(ToggleNote *note);
 
     private:
-        std::vector<ToggleNote*> mappedNotes;
+        std::vector<ToggleNote *> mappedNotes;
     };
 
 }

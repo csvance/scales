@@ -13,13 +13,14 @@
 #include "ToggleNote.h"
 #include "InstrumentNote.h"
 
-namespace MusicalScales{
+namespace MusicalScales {
 
     class MusicalInstrument {
     public:
         MusicalInstrument();
 
         void setScale(MusicalScale scale);
+
         void resetScale();
 
         std::vector<std::vector<ToggleNote>> noteGroups;
@@ -28,7 +29,7 @@ namespace MusicalScales{
         void buildIndex();
 
     private:
-        std::map<std::string,InstrumentNote> noteIndex;
+        std::map<std::string, InstrumentNote> noteIndex;
     };
 
 }

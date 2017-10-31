@@ -10,10 +10,11 @@
 
 namespace MusicalScales {
 
-    class GuitarRendererText : public MusicalInstrumentRendererText  {
+    class GuitarRendererText : public MusicalInstrumentRendererText {
     public:
-        GuitarRendererText(GuitarFamily inst);
-        void render(bool activeOnly);
+        explicit GuitarRendererText(GuitarFamily &inst);
+
+        void render(bool activeOnly) override;
 
     protected:
         GuitarFamily guitar;

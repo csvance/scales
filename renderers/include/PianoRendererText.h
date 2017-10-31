@@ -11,10 +11,11 @@
 
 namespace MusicalScales {
 
-    class PianoRendererText : public MusicalInstrumentRendererText  {
+    class PianoRendererText : public MusicalInstrumentRendererText {
     public:
-        PianoRendererText(Piano inst);
-        void render(bool activeOnly);
+        explicit PianoRendererText(Piano &inst);
+
+        void render(bool activeOnly) override;
 
     protected:
         Piano piano;

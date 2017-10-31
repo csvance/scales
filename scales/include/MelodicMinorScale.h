@@ -11,10 +11,11 @@ namespace MusicalScales {
 
     class MelodicMinorScale : public MusicalScale {
     public:
-        MelodicMinorScale(MusicalNote::rootNotes root);
+        explicit MelodicMinorScale(MusicalNote::rootNotes root);
+
         MelodicMinorScale(MusicalNote::rootNotes root, int octave);
 
-    protected:
+    private:
         void addSteps();
     };
 

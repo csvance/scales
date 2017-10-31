@@ -12,7 +12,11 @@ namespace MusicalScales {
     class ToggleNote : public MusicalNote {
     public:
         using MusicalNote::MusicalNote;
-        ToggleNote(const MusicalNote& note);
+
+        explicit ToggleNote(const MusicalNote &note);
+
+        explicit ToggleNote(int noteIndex);
+
         bool active;
     };
 

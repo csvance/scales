@@ -12,8 +12,9 @@ namespace MusicalScales {
 
     class MusicalInstrumentRendererText : public MusicalInstrumentRenderer {
     public:
-        MusicalInstrumentRendererText(MusicalInstrument inst);
-        void render(bool activeOnly);
+        explicit MusicalInstrumentRendererText(MusicalInstrument &inst);
+
+        void render(bool activeOnly) override;
     };
 
 }

@@ -13,20 +13,18 @@ namespace MusicalScales {
         noRepeat = false;
     }
 
-    MusicalScale::MusicalScale(MusicalNote::rootNotes root,int octave) {
+    MusicalScale::MusicalScale(MusicalNote::rootNotes root, int octave) {
         rootNote = root;
         rootOctave = octave;
         noRepeat = false;
     }
-
-    void MusicalScale::addSteps() {}
 
     void MusicalScale::build() {
 
         std::vector<MusicalNote>::iterator noteIt;
 
         //Build scale backwards starting at root note
-        int noteIndex = static_cast<int>(rootNote) + (rootOctave*12);
+        int noteIndex = static_cast<int>(rootNote) + (rootOctave * 12);
 
         auto stepBack = stepsDescending.rbegin();
 
@@ -67,7 +65,7 @@ namespace MusicalScales {
 
     }
 
-    int MusicalScale::size() {
+    size_t MusicalScale::size() {
         return notes.size();
     }
 

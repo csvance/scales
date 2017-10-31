@@ -11,9 +11,10 @@ namespace MusicalScales {
 
     class InstrumentString {
     public:
-        InstrumentString(MusicalNote root);
+        explicit InstrumentString(MusicalNote root);
 
         int noteIndex();
+
         MusicalNote rootNote;
     };
 

@@ -15,8 +15,10 @@ namespace MusicalScales {
     public:
 
         Piano();
-        Piano(int octaves);
-        Piano(int octaves,int root);
+
+        explicit Piano(int octaves);
+
+        Piano(int octaves, int root);
 
         int numOctaves;
         int rootOctave;

@@ -12,9 +12,9 @@ namespace MusicalScales {
 
     class FullyDiminishedScale : public MusicalScale {
     public:
-        FullyDiminishedScale(MusicalNote::rootNotes root);
+        explicit FullyDiminishedScale(MusicalNote::rootNotes root);
 
-    protected:
+    private:
         void addSteps();
     };
 

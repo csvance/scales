@@ -11,9 +11,9 @@ namespace MusicalScales {
 
     class DominantDiminishedScale : public MusicalScale {
     public:
-        DominantDiminishedScale(MusicalNote::rootNotes root);
+        explicit DominantDiminishedScale(MusicalNote::rootNotes root);
 
-    protected:
+    private:
         void addSteps();
     };
 

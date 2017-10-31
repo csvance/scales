@@ -9,20 +9,21 @@
 
 #include "GuitarRendererText.h"
 
-namespace MusicalScales{
+namespace MusicalScales {
 
-    GuitarRendererText::GuitarRendererText(GuitarFamily inst) : MusicalInstrumentRendererText((MusicalInstrument)inst) {
+    GuitarRendererText::GuitarRendererText(GuitarFamily &inst) : MusicalInstrumentRendererText(
+            (MusicalInstrument &) inst) {
         guitar = inst;
     }
 
-    void GuitarRendererText::render(bool activeOnly){
+    void GuitarRendererText::render(bool activeOnly) {
         std::stringstream outputStream;
 
         int countNote = 0, countGroup = 0;
 
 
         //Fretboard
-        for(int fret=0;fret<=guitar.numFrets;fret++)
+        for (int fret = 0; fret <= guitar.numFrets; fret++)
             outputStream << std::setw(3) << fret << "|";
 
         outputStream << std::endl;
@@ -34,21 +35,21 @@ namespace MusicalScales{
 
             auto noteIt = (*noteGroupIt).begin();
 
-            if(!activeOnly || (*noteIt).active)
+            if (!activeOnly || (*noteIt).active)
                 outputStream << std::setw(3) << (*noteIt).toString() << "|";
             else
-                outputStream << std::setw(4) <<  "|";
+                outputStream << std::setw(4) << "|";
 
             noteIt++;
 
             for (;
-                 noteIt != (*noteGroupIt).end();
-                 noteIt++) {
+                    noteIt != (*noteGroupIt).end();
+                    noteIt++) {
 
-                if(!activeOnly || (*noteIt).active)
+                if (!activeOnly || (*noteIt).active)
                     outputStream << std::setw(3) << (*noteIt).toString() << "|";
                 else
-                    outputStream << std::setw(4) <<  "|";
+                    outputStream << std::setw(4) << "|";
 
             }
 

@@ -10,28 +10,25 @@
 
 namespace MusicalScales {
 
-    MusicalInstrumentRendererText::MusicalInstrumentRendererText(MusicalInstrument inst) : MusicalInstrumentRenderer(inst){}
+    MusicalInstrumentRendererText::MusicalInstrumentRendererText(
+            MusicalInstrument &inst) : MusicalInstrumentRenderer(inst) {}
 
     void MusicalInstrumentRendererText::render(bool activeOnly) {
         std::stringstream outputStream;
 
         int countNote = 0, countGroup = 0;
 
-        for (auto noteGroupIt = instrument.noteGroups.begin();
-             noteGroupIt != instrument.noteGroups.end();
-             noteGroupIt++) {
+        for (auto &noteGroup : instrument.noteGroups) {
 
             outputStream << countGroup + 1 << ":{";
             countNote = 0;
 
-            for (auto noteIt = (*noteGroupIt).begin();
-                 noteIt != (*noteGroupIt).end();
-                 noteIt++) {
+            for (auto &note : noteGroup) {
 
-                if(activeOnly && !(*noteIt).active)
+                if (activeOnly && !note.active)
                     outputStream << " ,";
                 else
-                    outputStream << (*noteIt).toString() << ",";
+                    outputStream << note.toString() << ",";
 
                 countNote++;
 

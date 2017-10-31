@@ -4,7 +4,7 @@
 
 #include "include/InstrumentString.h"
 
-namespace MusicalScales{
+namespace MusicalScales {
 
     InstrumentString::InstrumentString(MusicalNote root) {
         rootNote = root;

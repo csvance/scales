@@ -3,17 +3,13 @@
 //
 
 #include "InstrumentNote.h"
-#include "ToggleNote.h"
 
 namespace MusicalScales {
 
     void InstrumentNote::mappedNoteSetActive(bool active) {
-        for(auto mappedNotesIt = mappedNotes.begin();
-            mappedNotesIt != mappedNotes.end();
-            mappedNotesIt++) {
+        for (auto &mappedNote : mappedNotes)
+            mappedNote->active = active;
 
-            (*mappedNotesIt)->active = active;
-        }
 
     }
 

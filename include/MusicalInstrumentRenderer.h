@@ -11,10 +11,12 @@ namespace MusicalScales {
 
     class MusicalInstrumentRenderer {
     public:
-        MusicalInstrumentRenderer(MusicalInstrument inst);
+        explicit MusicalInstrumentRenderer(MusicalInstrument &inst);
+
         virtual void render(bool activeOnly);
 
         void setOctaveStart(int start);
+
     protected:
         bool renderRange;
         int octaveStart;

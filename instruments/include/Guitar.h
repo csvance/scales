@@ -13,7 +13,9 @@ namespace MusicalScales {
     class Guitar : GuitarFamily {
     public:
         Guitar();
-        Guitar(int frets);
+
+        explicit Guitar(int frets);
+
         Guitar(int frets, std::vector<InstrumentString> &instrumentStrings);
     };
 

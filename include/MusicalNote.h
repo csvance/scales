@@ -37,10 +37,12 @@ namespace MusicalScales {
 
         MusicalNote(rootNotes note, int octaveNum);
 
-        MusicalNote(const MusicalNote& note);
+        MusicalNote(const MusicalNote &note);
 
         int noteIndex();
+
         std::string toString();
+
         std::string key();
 
         static std::string rootToString(rootNotes note);

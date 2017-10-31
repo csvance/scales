@@ -29,7 +29,7 @@ namespace MusicalScales {
         octave = octaveNum;
     }
 
-    MusicalNote::MusicalNote(const MusicalNote& note) {
+    MusicalNote::MusicalNote(const MusicalNote &note) {
         rootNote = note.rootNote;
         octave = note.octave;
     }
@@ -42,12 +42,12 @@ namespace MusicalScales {
         return noteString.str();
     }
 
-    std::string MusicalNote::key(){
+    std::string MusicalNote::key() {
         return toString();
     }
 
-    int MusicalNote::noteIndex(){
-        return static_cast<int>(rootNote) + octave*12;
+    int MusicalNote::noteIndex() {
+        return static_cast<int>(rootNote) + octave * 12;
     };
 
     std::string MusicalNote::rootToString(rootNotes note) {

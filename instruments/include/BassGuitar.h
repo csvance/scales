@@ -12,7 +12,9 @@ namespace MusicalScales {
     class BassGuitar : public GuitarFamily {
     public:
         BassGuitar();
-        BassGuitar(int frets);
+
+        explicit BassGuitar(int frets);
+
         BassGuitar(int frets, std::vector<InstrumentString> &instrumentStrings);
     };
 

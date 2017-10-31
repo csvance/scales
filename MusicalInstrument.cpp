@@ -8,62 +8,47 @@
 #include <sstream>
 
 #include "include/MusicalInstrument.h"
-#include "include/ToggleNote.h"
 
 namespace MusicalScales {
 
-    MusicalInstrument::MusicalInstrument() {}
+    MusicalInstrument::MusicalInstrument() = default;
 
-    void MusicalInstrument::resetScale(){
-        for(auto noteGroupIt = noteGroups.begin();
-                noteGroupIt != noteGroups.end();
-                noteGroupIt++){
-            for(auto noteIt = (*noteGroupIt).begin();
-                    noteIt != (*noteGroupIt).end();
-                    noteIt++)
-                (*noteIt).active = false;
-        }
+    void MusicalInstrument::resetScale() {
+        for (auto &noteGroup : noteGroups)
+            for (auto &noteIt : noteGroup)
+                noteIt.active = false;
     }
 
     void MusicalInstrument::setScale(MusicalScale scale) {
 
         resetScale();
 
-        for(auto scaleNoteIt = scale.notes.begin();
-                scaleNoteIt != scale.notes.end();
-                scaleNoteIt++){
-
-            noteIndex[(*scaleNoteIt).key()].mappedNoteSetActive(true);
-
-        }
+        for (auto &note : scale.notes)
+            noteIndex[note.key()].mappedNoteSetActive(true);
 
     }
 
     void MusicalInstrument::buildIndex() {
 
-        noteIndex = std::map<std::string,InstrumentNote>();
+        noteIndex = std::map<std::string, InstrumentNote>();
 
         //Loop through groups of instrument notes (ie strings)
-        for (auto noteGroupsIterator = noteGroups.begin();
-             noteGroupsIterator != noteGroups.end();
-             noteGroupsIterator++) {
+        for (auto &noteGroup : noteGroups) {
 
             //Loop through individual notes in the group
-            for (auto notesIterator = (*noteGroupsIterator).begin();
-                 notesIterator != (*noteGroupsIterator).end();
-                 notesIterator++) {
+            for (auto &notesIterator : noteGroup) {
 
-                std::string noteKey = (*notesIterator).key();
+                std::string noteKey = notesIterator.key();
                 auto instrumentNoteIt = noteIndex.find(noteKey);
 
                 if (instrumentNoteIt == noteIndex.end()) {
 
-                    InstrumentNote newNote = InstrumentNote((*notesIterator).noteIndex());
-                    newNote.mappedNoteAdd(&(*notesIterator));
+                    InstrumentNote newNote = InstrumentNote(notesIterator.noteIndex());
+                    newNote.mappedNoteAdd(&notesIterator);
 
                     noteIndex[noteKey] = newNote;
                 } else {
-                    noteIndex[noteKey].mappedNoteAdd(&(*notesIterator));
+                    noteIndex[noteKey].mappedNoteAdd(&notesIterator);
                 }
 
             }

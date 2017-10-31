@@ -11,8 +11,9 @@ namespace MusicalScales {
 
     class NaturalMinorScale : public MusicalScale {
     public:
-        NaturalMinorScale(MusicalNote::rootNotes root);
-    protected:
+        explicit NaturalMinorScale(MusicalNote::rootNotes root);
+
+    private:
         void addSteps();
     };
 

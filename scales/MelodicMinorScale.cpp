@@ -16,7 +16,7 @@ namespace MusicalScales {
         build();
     }
 
-    void MelodicMinorScale::addSteps(){
+    void MelodicMinorScale::addSteps() {
         stepsAscending.push_back(MusicalScale::noteSteps::Whole);
         stepsAscending.push_back(MusicalScale::noteSteps::Whole);
         stepsAscending.push_back(MusicalScale::noteSteps::Half);

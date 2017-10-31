@@ -21,18 +21,15 @@ namespace MusicalScales {
             Half = 1, Whole = 2, WholeHalf = 3
         };
 
-        void setRoot(MusicalNote::rootNotes note);
-
-        void setStep(std::vector<noteSteps> steps);
-
         void build();
 
-        MusicalScale(MusicalNote::rootNotes root);
+        explicit MusicalScale(MusicalNote::rootNotes root);
+
         MusicalScale(MusicalNote::rootNotes root, int octave);
 
         MusicalNote getNote(int index);
 
-        int size();
+        size_t size();
 
         std::vector<MusicalNote> notes;
 
@@ -41,8 +38,6 @@ namespace MusicalScales {
     protected:
         MusicalNote::rootNotes rootNote;
         int rootOctave;
-
-        virtual void addSteps();
 
         std::vector<noteSteps> stepsAscending;
         std::vector<noteSteps> stepsDescending;
@@ -53,9 +48,6 @@ namespace MusicalScales {
     };
 
 }
-
-
-
 
 
 #endif //GUITAR_SCALES_MUSICALSCALE_H
